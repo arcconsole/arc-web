@@ -2,14 +2,15 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
+const poppins = localFont({
+  src: "./fonts/Poppins-Regular.ttf",
+  variable: "--font-poppins",
   weight: "100 900",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
+
+const ethnocentric = localFont({
+  src: "./fonts/Ethnocentric_rg.otf",
+  variable: "--font-ethnocentric",
   weight: "100 900",
 });
 
@@ -26,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${poppins.variable} ${ethnocentric.variable} antialiased`}
       >
         {children}
       </body>
