@@ -29,7 +29,7 @@ const Footer = () => {
 
   return (
     <div className="bg-[#5C357B] flex flex-col md:flex-row justify-between items-center py-4">
-      <div className="container mx-auto flex flex-col md:flex-row min-h-28 max-w-[94vw] items-center justify-between px-4 md:px-6">
+      <div className="container mx-auto flex flex-col md:flex-row min-h-28 max-w-[94vw] items-start md:items-center justify-between px-4 md:px-6">
         <Link
           href="#"
           className="flex items-center gap-2 mb-4 md:mb-0"
@@ -44,14 +44,14 @@ const Footer = () => {
           ></Image>
           <span className="sr-only">Acme Inc</span>
         </Link>
-        <nav className="flex flex-col md:flex-row items-center gap-6 text-base font-medium font-poppins mb-4 md:mb-0">
+        <nav className="flex flex-col md:flex-row items-start md:items-center gap-6 text-base font-medium font-poppins mb-4 md:mb-0">
           {links.map((link) => (
             <Link key={link} href="#" className="text-white" prefetch={false}>
               {link}
             </Link>
           ))}
         </nav>
-        <div className="flex flex-col items-center md:items-end justify-center gap-4 text-white text-sm font-poppins">
+        <div className="flex flex-col items-start md:items-end justify-center gap-4 text-white text-sm font-poppins">
           <div className="flex items-center gap-4 text-2xl">
             {socials.map((social) => (
               <Link key={social.link} href={social.link} prefetch={false}>
