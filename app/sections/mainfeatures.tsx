@@ -66,6 +66,7 @@ const Mainfeatures = () => {
           </div>
         ))}
       </div>
+      <div className="bg-gradient-to-t from-[#5b357bb2] to-transparent h-48 w-full"></div>
     </div>
   );
 };
