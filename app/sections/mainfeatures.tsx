@@ -1,3 +1,4 @@
+import ArcButton from "@/components/ui/arc-button";
 import Image from "next/image";
 import React from "react";
 
@@ -66,7 +67,13 @@ const Mainfeatures = () => {
           </div>
         ))}
       </div>
-      <div className="bg-gradient-to-t from-[#5b357bb2] to-transparent h-48 w-full"></div>
+      <div className="bg-gradient-to-t from-[#5b357bb2] to-transparent h-48 w-full">
+        <div className="flex gap-8 justify-end items-center w-full p-8 px-24 text-white">
+          <ArcButton className="w-fit" side="left">
+            Join the Tribe.
+          </ArcButton>
+        </div>
+      </div>
     </div>
   );
 };

@@ -1,3 +1,4 @@
+import ArcButton from "@/components/ui/arc-button";
 import Image from "next/image";
 import React from "react";
 
@@ -29,6 +30,11 @@ const Nemo = () => {
             Best in class native Android handheld console powered by{" "}
             <span className="font-bold">Snapdragon 8 Gen 2</span>
           </p>
+        </div>
+        <div className="flex justify-end">
+          <ArcButton className="w-fit" side="left">
+            Join the Tribe.
+          </ArcButton>
         </div>
       </div>
     </div>

@@ -1,3 +1,4 @@
+import ArcButton from "@/components/ui/arc-button";
 import Image from "next/image";
 import React from "react";
 
@@ -16,6 +17,9 @@ const Hero = () => {
             Designed for Gamers, Powered by Innovation, Built Around You.
           </p>
         </div>
+        <ArcButton className="w-fit" side="right">
+          Join the Tribe.
+        </ArcButton>
       </div>
       <div className="flex items-end justify-end relative text-[16rem] text-[#67378D] font-ethnocentric z-10 leading-none w-full lg:w-1/2">
         <Image

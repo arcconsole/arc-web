@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
@@ -10,6 +10,12 @@ interface TimelineItem {
 }
 const Features = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % 4);
+    }, 3000);
+    return () => clearInterval(interval); // Cleanup interval on component unmount
+  }, []);
 
   const items: TimelineItem[] = [
     {
@@ -91,6 +97,7 @@ const Features = () => {
       <Image
         src="/fatures_image.webp"
         alt="Features Image"
+        className="max-sm:hidden"
         width={350}
         height={350}
         draggable={false}

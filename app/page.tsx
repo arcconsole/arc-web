@@ -4,6 +4,7 @@ import Nemo from "./sections/nemo";
 import Features from "./sections/features";
 import Footer from "./sections/footer";
 import Mainfeatures from "./sections/mainfeatures";
+import GlowSection from "./sections/glowSection";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <Nemo />
       <Features />
+      <GlowSection />
       <Mainfeatures />
       <Footer />
     </>
