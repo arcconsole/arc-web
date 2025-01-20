@@ -143,59 +143,11 @@ const WaitlistDialog = () => {
               >
                 <CircleX />
               </span>
-              <div className="flex flex-col text-center gap-5">
-                <h1 className="text-6xl font-hepta">Join the Waitlist 1233</h1>
-                <p>Sign up to get latest updates straight to your inbox.</p>
+              <div className="flex flex-col text-center gap-8">
+                <h1 className="text-6xl font-hepta">Join the Tribe</h1>
+                <p className="text-xl">Join our community to get updates!</p>
               </div>
-              <div className="bg-gradient-to-r from-[#542679] to-transparent w-full sm:w-3/6 px-4 sm:px-32 p-4 sm:p-8 rounded-3xl">
-                <form className="space-y-4 relative">
-                  {/* Name Input */}
-                  <div>
-                    <Input
-                      type="text"
-                      placeholder="Name"
-                      className="w-full h-12 px-4 py-3 bg-black text-white placeholder-gray-400 border border-purple-600 rounded-full focus:ring-2 focus:ring-purple-500 focus:outline-none"
-                    />
-                  </div>
-                  {/* Phone Number Input */}
-                  <div>
-                    <Input
-                      type="text"
-                      placeholder="Phone Number"
-                      className="w-full h-12 px-4 py-3 bg-black text-white placeholder-gray-400 border border-purple-600 rounded-full focus:ring-2 focus:ring-purple-500 focus:outline-none"
-                    />
-                  </div>
-                  {/* Email Input */}
-                  <div>
-                    <Input
-                      type="email"
-                      placeholder="Email"
-                      className="w-full h-12 px-4 py-3 bg-black text-white placeholder-gray-400 border border-purple-600 rounded-full focus:ring-2 focus:ring-purple-500 focus:outline-none"
-                    />
-                  </div>
-                  {/* Submit Button */}
-                  <div className="flex justify-center pt-5">
-                    <ArcButton
-                      onClick={() => {
-                        setConfettiHidden(false);
-                        setConfettiKey((prevKey) => prevKey + 1);
-                        confettiRef.current?.fire({});
-                      }}
-                      side="left"
-                    >
-                      Join Now!
-                    </ArcButton>
-                  </div>
-                </form>
-              </div>
-              <Confetti
-                key={confettiKey}
-                ref={confettiRef}
-                className={cn(
-                  "absolute left-0 top-0 z-0 size-full ",
-                  confettiHidden ? "hidden" : ""
-                )}
-              />
+              <ArcButton side="left">Join Now!</ArcButton>
             </ShineBorder>
           </motion.div>
         </div>
