@@ -5,7 +5,7 @@ import React from "react";
 const Hero = () => {
   return (
     <div className="flex flex-col-reverse lg:flex-row w-full justify-between items-center text-white min-h-dvh md:min-h-screen pl-5 lg:pl-32 relative overflow-hidden max-sm:pt-16">
-      <div className="absolute z-[-1] bg-[#6004A7] backdrop-blur-3xl blur-[150px] w-[800px] h-[750px] rounded-full top-[5%] -right-24 animate-pulse duration-[3500] ease-linear"></div>
+      <div className="absolute z-[-1] bg-[#6004A7] backdrop-blur-3xl blur-[150px] w-[800px] h-[750px] rounded-full top-[5%] -right-24 animate-pulse duration-[3500ms] ease-linear"></div>
       <div className="absolute z-[-1] bg-[#6004A7] backdrop-blur-3xl blur-[150px] w-[500px] h-[500px] rounded-full top-[15%] -right-14 "></div>
       <div className="flex flex-col gap-16">
         <h1 className="md:text-6xl text-4xl font-ethnocentric">
