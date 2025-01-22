@@ -1,4 +1,3 @@
-import ArcButton from "@/components/ui/arc-button";
 import Waitlistdialog from "@/components/waitlist-dialog";
 import Image from "next/image";
 import React from "react";
